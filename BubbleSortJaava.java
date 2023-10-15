@@ -1,3 +1,8 @@
+// This algorithm is slowest among all sorting algorithms because of it has a highest time complexity
+// Each element is compared with its exact next element and swapping is done based on ascending and descending order
+
+
+
 public class BubbleSortJava {
 
     public static void main(String[] args) {
