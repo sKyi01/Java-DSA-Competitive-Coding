@@ -10,11 +10,11 @@ public class BubbleSortJava {
 
         int[] arr = { 3, 6, 2, 8, 4 };
         System.out.println("Array Before Sorting");
-        printBubbleSortedArray(arr);
+        printArray(arr);
         arr = bubbleSort(arr);
         System.out.println("");
         System.out.println("Array After Sorting");
-        printBubbleSortedArray(arr);
+        printArray(arr);
 
     }
 
@@ -36,7 +36,7 @@ public class BubbleSortJava {
 
     }
 
-    public static void printBubbleSortedArray(int[] arr) {
+    public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
 
             System.out.print(arr[i] + "-");
