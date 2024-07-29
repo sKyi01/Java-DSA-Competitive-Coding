@@ -26,7 +26,7 @@ public class CoordinateDistance {
         String y1 = "";
         String y2 = "";
         int count = 0;
-        int count2=0;
+        int count2 = 0;
 
         for (int i = 0; i < c1.length; i++) {
 
@@ -75,34 +75,33 @@ public class CoordinateDistance {
         System.out.println("Y 1: " + y1);
         System.out.println("Y 2: " + y2);
 
-        int xc1= Integer.parseInt(x1);
-        int xc2= Integer.parseInt(x2);
-        int yc1= Integer.parseInt(y1);
-        int yc2= Integer.parseInt(y2);
+        int xc1 = Integer.parseInt(x1);
+        int xc2 = Integer.parseInt(x2);
+        int yc1 = Integer.parseInt(y1);
+        int yc2 = Integer.parseInt(y2);
+        int temp = xc2;
+        xc2 = yc1;
+        yc1 = temp;
 
-        int xc= xc2-xc1;
-        int yc= yc2-yc1;
+        int xc = xc2 - xc1;
+        int yc = yc2 - yc1;
 
-        double result = Math.sqrt((xc*xc)+(yc*yc));
+        double result = Math.sqrt((xc * xc) + (yc * yc));
 
         return result;
-
-
-
-
 
     }
 
     public static void main(String[] args) {
 
-        String s1 = "A: (3, 5)";
-        String s2 = "B: (5,8)";
+        String s1 = "A: (43, 96)";
+        String s2 = "B: (13,76)";
         String c1 = retriveInt(s1);
         String c2 = retriveInt(s2);
 
         // System.out.println(c1 + " "+c2);
 
-        double result=calculateDistance(c1, c2);
+        double result = calculateDistance(c1, c2);
 
         System.out.println("distance between coordinates : " + result);
 
