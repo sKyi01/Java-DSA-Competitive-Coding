@@ -19,7 +19,7 @@ public class MedianArray {
         if(n%2==0){
 
             index1= n/2;
-            index2= (n/2)-1;
+            index2= index1-1;
 
             System.out.println("Median is : "+  (double) (arr[index1]+arr[index2])/2);
 

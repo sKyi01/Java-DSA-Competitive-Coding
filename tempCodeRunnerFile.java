@@ -1,2 +1,1 @@
- "+x2);
-       System.out.println(y1 +" "+y2);
+- i - 1
